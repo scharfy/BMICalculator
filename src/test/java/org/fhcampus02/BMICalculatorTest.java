@@ -37,5 +37,10 @@ class BMICalculatorTest {
 
     @Test
     void getBMICategoryName() {
+        BMICalculator bmiCalculator = new BMICalculator("Erika", "Mustermann", 170, 70, 'w');
+        assertEquals("Übergewicht", bmiCalculator.getBMICategoryName());
+
+        BMICalculator bmiCalculator2 = new BMICalculator("Max", "Mustermann", 180, 120, 'm');
+        assertEquals("Sehr starkes Übergewicht", bmiCalculator2.getBMICategoryName());
     }
 }
