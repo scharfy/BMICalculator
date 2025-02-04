@@ -3,13 +3,15 @@ package org.fhcampus02;
 public class Main {
     public static void main(String[] args) {
         BMICalculator bmiCalculator = new BMICalculator(
-                "Niklas",
+                "Niklas Balthasar",
                 "Scharfy",
                 176,
                 78,
                 'm'
         );
 
-        System.out.println(bmiCalculator.calculateBMI());
+        System.out.println(
+                bmiCalculator.getFirstname() + " " + bmiCalculator.getLastname() + " hat " + bmiCalculator.getBMICategoryName() + ". :("
+        );
     }
 }
