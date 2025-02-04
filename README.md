@@ -1,1 +1,1 @@
-![Pipeline status](https://github.com/scharfy/BMICalculator/.github/workflows/github-actions.yml/badge.svg)
+[![GitHub Actions Status](https://github.com/scharfy/BMICalculator/actions/workflows/github-actions.yml/badge.svg)](https://github.com/scharfy/BMICalculator/actions/workflows/github-actions.yml)
