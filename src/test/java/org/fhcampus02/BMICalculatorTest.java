@@ -1,6 +1,5 @@
 package org.fhcampus02;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,6 +28,11 @@ class BMICalculatorTest {
 
     @Test
     void calculateBMICategory() {
+        BMICalculator bmiCalculator = new BMICalculator("Erika", "Mustermann", 170, 70, 'w');
+        assertEquals(1, bmiCalculator.calculateBMICategory());
+
+        BMICalculator bmiCalculator2 = new BMICalculator("Max", "Mustermann", 180, 120, 'm');
+        assertEquals(2, bmiCalculator2.calculateBMICategory());
     }
 
     @Test
