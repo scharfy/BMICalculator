@@ -2,6 +2,14 @@ package org.fhcampus02;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        BMICalculator bmiCalculator = new BMICalculator(
+                "Niklas",
+                "Scharfy",
+                176,
+                78,
+                'm'
+        );
+
+        System.out.println(bmiCalculator.calculateBMI());
     }
 }
